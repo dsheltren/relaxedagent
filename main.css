@@ -119,6 +119,16 @@ a {
 .section {
     padding: 50px 15px;
 }
+.section.large {
+    min-height: 750px;
+}
+.section.blob {
+    min-height: 100vh;
+    background-image: url(/images/splash3.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 .section-header {
     text-align: center;
     margin-bottom: 20px;
@@ -140,8 +150,13 @@ a {
     margin-bottom: 15px;
 }
 .section-card__header {
-    font-size: 1em;
+    font-size: 1.4em;
     margin-bottom: 15px;
+}
+.section-card img {
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 3px;
 }
 .flex-row {
     display: flex;
@@ -210,6 +225,7 @@ a {
 }
 .services-item i {
     margin-right: 5px;
+    color: #ffffff;
 }
 .services-link {
     text-decoration: none;
