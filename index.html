@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Relaxed Agent | Transaction Coordinators</title>
     <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,500|Roboto:400,500&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
     <script src="https://kit.fontawesome.com/8ed64eda69.js"></script>
@@ -25,41 +26,102 @@
             </nav>
         </header>
         <div class="cover">  
-            <div class="hero">
-                <div class="hero-content">
-                    <h1 class="hero-header">Pre to Post Escrow, we got you covered.</h1>
-                    <p class="hero-text">Spend more time 
-                            <span class="typer" id="main" data-words="making your calls.,holding Open Houses.,going on Listing Appointments.,nurturing your Sphere of Influence." data-delay="70" data-deleteDelay="2500"></span>
-                            <span class="cursor" data-cursor-display="|" data-owner="main"></span>
-                    </p>
-                    <a style="margin-top:20px;" class="button" href="">Get Started</a>
-                    <a style="margin-top:20px;margin-left: 5px" class="button bordered" href="#learn-more">Learn More</a>
-                </div>
-                <div class="hero-card">
-                    <div class="hero-card-list">
-                            <h3>Lead Generation</h3>
-                            <ul class="services-list">
-                                <li class="services-item"><a class="services-link" href="#"><i class="far fa-check-circle"></i>Facebook Ads</a></li>
-                                <li class="services-item"><a class="services-link" href="#"><i class="far fa-check-circle"></i>Google Adwords</a></li>
-                            </ul>
-                            <h3>Tech, Website Design & Integrations</h3>
-                            <ul class="services-list">
-                                <li class="services-item"><a class="services-link" href="#"><i class="far fa-check-circle"></i>Zapier</a></li>
-                                <li class="services-item"><a class="services-link" href="#"><i class="far fa-check-circle"></i>API Nation</a></li>
-                                <li class="services-item"><a class="services-link" href="#"><i class="far fa-check-circle"></i>Click Funnels</a></li>
-                                <li class="services-item"><a class="services-link" href="#"><i class="far fa-check-circle"></i>SlyBroadcast</a></li>
-                                <li class="services-item"><a class="services-link" href="#"><i class="far fa-check-circle"></i>Custom HTML & CSS</a></li>
-                            </ul>
-                            <h3>Complete Transaction Assistance</h3>
-                            <ul class="services-list">
-                                <li class="services-item"><a class="services-link" href="#"><i class="far fa-check-circle"></i>Uploading Listing to MLS</a></li>
-                                <li class="services-item"><a class="services-link" href="#"><i class="far fa-check-circle"></i>Full Disclosure Packages</a></li>
-                                <li class="services-item"><a class="services-link" href="#"><i class="far fa-check-circle"></i>Click Funnels</a></li>
-                                <li class="services-item"><a class="services-link" href="#"><i class="far fa-check-circle"></i>SlyBroadcast</a></li>
-                            </ul>
-                    </div>  
-                </div>
-                </div>
+            <div class="container">
+                <div class="hero">
+                    <div class="hero-content">
+                        <h1 class="hero-header">Pre to Post Escrow, we got you covered.</h1>
+                        <p class="hero-text">Spend more time 
+                                <span class="typer" id="main" data-words="making your calls.,holding Open Houses.,going on Listing Appointments.,nurturing your Sphere of Influence." data-delay="70" data-deleteDelay="2500"></span>
+                                <span class="cursor" data-cursor-display="|" data-owner="main"></span>
+                        </p>
+                        <a style="margin-top:20px;" class="button" href="">Get Started</a>
+                        <a style="margin-top:20px;margin-left: 5px" class="button bordered" href="#learn-more">Learn More</a>
+                        <div id="hero-testimonial-wrapper">
+                            <div class="hero-slider">
+                                <div class="hero-testimonial-card">
+                                    <div class="hero-testimonial-inner">
+                                        <div class="hero-testimonial-image">
+                                            <img src="/images/little-lady.jpg" alt="Young Woman Smiling">
+                                        </div>
+                                        <div class="hero-testimonial-content">
+                                            <h3 class="hero-testimonial-header">Travis Smith</h3><span>Big Box Brokerage</span>
+                                            <p class="hero-testimonial-text">This is my testimonial and I hope it makes you want to use these for your next transaction.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hero-testimonial-card">
+                                    <div class="hero-testimonial-inner">
+                                        <div class="hero-testimonial-image">
+                                            <img src="/images/little-beard.jpg" alt="Man with Beard Smiling">
+                                        </div>
+                                        <div class="hero-testimonial-content">
+                                            <h3 class="hero-testimonial-header">Travis Smith</h3>
+                                            <p class="hero-testimonial-text">This is my testimonial and I hope it makes you want to use these for your next transaction.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hero-testimonial-card">
+                                    <div class="hero-testimonial-inner">
+                                        <div class="hero-testimonial-image">
+                                            <img src="/images/little-smile.jpg" alt="Man in Suit Smiling">
+                                        </div>
+                                        <div class="hero-testimonial-content">
+                                            <h3 class="hero-testimonial-header">Travis Smith</h3>
+                                            <p class="hero-testimonial-text">This is my testimonial and I hope it makes you want to use these for your next transaction.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hero-testimonial-card">
+                                    <div class="hero-testimonial-inner">
+                                        <div class="hero-testimonial-image">
+                                            <img src="/images/little-glasses.jpg" alt="Business Man Smiling">
+                                        </div>
+                                        <div class="hero-testimonial-content">
+                                            <h3 class="hero-testimonial-header">Travis Smith</h3>
+                                            <p class="hero-testimonial-text">This is my testimonial and I hope it makes you want to use these for your next transaction.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hero-testimonial-card">
+                                    <div class="hero-testimonial-inner">
+                                        <div class="hero-testimonial-image">
+                                            <img src="/images/little-woman.jpg" alt="Business Woman Smiling">
+                                        </div>
+                                        <div class="hero-testimonial-content">
+                                            <h3 class="hero-testimonial-header">Travis Smith</h3>
+                                            <p class="hero-testimonial-text">This is my testimonial and I hope it makes you want to use these for your next transaction.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-card">
+                        <div class="hero-card-list">
+                                <h3>Lead Generation</h3>
+                                <ul class="services-list">
+                                    <li class="services-item"><a class="services-link" href="#"><i class="far fa-check-circle"></i>Facebook Ads</a></li>
+                                    <li class="services-item"><a class="services-link" href="#"><i class="far fa-check-circle"></i>Google Adwords</a></li>
+                                </ul>
+                                <h3>Tech, Website Design & Integrations</h3>
+                                <ul class="services-list">
+                                    <li class="services-item"><a class="services-link" href="#"><i class="far fa-check-circle"></i>Zapier</a></li>
+                                    <li class="services-item"><a class="services-link" href="#"><i class="far fa-check-circle"></i>API Nation</a></li>
+                                    <li class="services-item"><a class="services-link" href="#"><i class="far fa-check-circle"></i>Click Funnels</a></li>
+                                    <li class="services-item"><a class="services-link" href="#"><i class="far fa-check-circle"></i>SlyBroadcast</a></li>
+                                    <li class="services-item"><a class="services-link" href="#"><i class="far fa-check-circle"></i>Custom HTML & CSS</a></li>
+                                </ul>
+                                <h3>Complete Transaction Assistance</h3>
+                                <ul class="services-list">
+                                    <li class="services-item"><a class="services-link" href="#"><i class="far fa-check-circle"></i>Uploading Listing to MLS</a></li>
+                                    <li class="services-item"><a class="services-link" href="#"><i class="far fa-check-circle"></i>Full Disclosure Packages</a></li>
+                                    <li class="services-item"><a class="services-link" href="#"><i class="far fa-check-circle"></i>Click Funnels</a></li>
+                                    <li class="services-item"><a class="services-link" href="#"><i class="far fa-check-circle"></i>SlyBroadcast</a></li>
+                                </ul>
+                        </div>  
+                    </div>
+                    </div>
+            </div>
             </div>   
         </div>
         <section id="learn-more" class="section large">
@@ -97,7 +159,8 @@
             
         </section>
     </div>
-    <script src="/main.js"></script>
     <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="/main.js"></script>
 </body>
 </html>

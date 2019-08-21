@@ -1,3 +1,8 @@
+/*
+Photos by Tim Savage,Bruce Mars,Dellon Thomas,Pixabay from Pexels
+
+*/
+
 * {
   padding: 0;
   margin: 0;
@@ -212,8 +217,10 @@ a {
   align-items: center;
 }
 .hero-content {
+  position: relative;
   max-width: 650px;
-  min-width: 575px;
+  min-width: 515px;
+  margin-right: 20px;
 }
 .hero-header {
   font-size: 3.5rem;
@@ -233,46 +240,25 @@ a {
   position: relative;
   width: 100%;
   max-width: 450px;
-  top: 30px;
-  padding: 40px;
-  background-color: #67a7d2;
+  top: 120px;
   background-position: center;
   background-size: cover;
   border-radius: 5px;
+  background: #444;
   box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.2);
 }
-.hero-card:after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  background: rgb(68, 68, 68);
-  border-radius: 5px;
-  animation: grow 15s ease-in-out 0.5s infinite;
-}
-@keyframes grow {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.05);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
+
 .hero-card-list h3 {
   color: #ffffff;
   font-weight: 300;
+  padding: 0 40px;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .services-list {
   list-style: none;
-  padding: 10px 0;
+  padding: 10px 40px;
   margin: 0;
 }
 .services-item {
@@ -291,4 +277,63 @@ a {
 }
 .services-link:hover {
   color: rgb(51, 80, 100);
+}
+#hero-testimonial-wrapper {
+  position: absolute;
+  left: -50px;
+  bottom: -250px;
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%230396ac' fill-opacity='0.07' fill-rule='evenodd'/%3E%3C/svg%3E");
+  z-index: 0;
+  width: 100%;
+  max-width: 450px;
+  border-radius: 3px;
+  box-shadow: 0px 6px 30px -15px rgba(0, 0, 0, 0.226);
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.5s ease 2s;
+  transform: translateY(-10px);
+}
+.hero-testimonial-header {
+  display: inline;
+  margin-bottom: 10px;
+}
+.hero-testimonial-header:after {
+  content: "-";
+  margin-left: 5px;
+  font-size: 12px;
+}
+.hero-testimonial-text:before {
+  content: '"';
+  margin-right: 1px;
+  font-size: 18px;
+}
+.hero-testimonial-text:after {
+  content: '"';
+  margin-left: 1px;
+  font-size: 18px;
+}
+.hero-testimonial-card {
+  padding: 25px;
+}
+.hero-testimonial-inner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.hero-testimonial-content {
+  margin-left: 15px;
+  width: 100%;
+}
+.hero-testimonial-content span {
+  display: inline;
+  margin-left: 5px;
+  font-size: 0.8em;
+  color: rgb(131, 128, 128);
+}
+.hero-testimonial-image,
+.hero-testimonial-image img {
+  display: inline-block;
+  border-radius: 50%;
+  border: 1px solid #ececec;
 }
